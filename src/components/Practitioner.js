@@ -28,8 +28,10 @@ class Practitioner extends Component {
     });
   };
 
+  
   render() {
     const { practitioners } = this.state;
+    console.log(practitioners);
     return (
       <table>
         <thead>

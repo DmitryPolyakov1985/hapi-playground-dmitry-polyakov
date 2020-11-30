@@ -1,38 +1,80 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  padding: 30px;
+}
+
+/* TABLE */
+.patients-table {
+  width: 70vw;
+  max-width: 90vw;
+  margin: 30px auto;
+  /* padding: 30px; */
+  border: 10px solid #444;
+  margin-top: 30px;
+}
+
+.patients-table thead th {
+  padding: 30px 20px;
+  background-color: rgb(21, 143, 21);
+  color: #e3e3e3;
+  font-size: 1.2rem;
+}
+
+.patients-table tbody {
+  background-color: rgb(143, 175, 143);
+  color:#222;
+}
+
+.patients-table tbody td {
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* FORM */
+.form {
+  padding: 20px;
+  padding-left: 0;
+  background-color: #fff; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-field {
+  padding: 10px 0 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit-btn {
+  margin-top: 20px;
+  padding: 0.7em 2em;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  background-color: rgb(103, 187, 103);
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-in 0.12s;
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: rgb(21, 143, 21);
+  color: #fff;
+}
+
+.name-form-block,
+.date-form-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-error {
+  font-size: 0.8rem;
+  color: red;
 }

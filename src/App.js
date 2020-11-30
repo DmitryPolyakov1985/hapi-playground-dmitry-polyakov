@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { getPatients } from "./services";
+import Practitioner from './components/Practitioner'
+import PatientsTable from './components/Table'
+import './App.css'
 
 class App extends Component {
   componentDidMount() {
@@ -8,7 +11,12 @@ class App extends Component {
     });
   }
   render() {
-    return <p>Check the console!</p>;
+    return(
+      <>
+        {/* <Practitioner /> */}
+        <PatientsTable />
+      </>      
+    );
   }
 }
 
