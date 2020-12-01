@@ -19,7 +19,7 @@ body {
   margin: 30px auto;
   /* padding: 30px; */
   border: 10px solid #444;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .patients-table thead th {
@@ -39,15 +39,51 @@ body {
   text-align: center;
 }
 
+.list-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 0.2em 1em;
+}
+
+.underline {
+  display: block;
+  border-bottom: 4px solid #555;
+  width: 20%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
 /* FORM */
 .form {
   padding: 20px;
   padding-left: 0;
-  background-color: #fff; 
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  background-color: #ddd;
+  margin: 10px auto;
 }
 
 .form-field {
-  padding: 10px 0 5px 0;
+  padding: 10px 30px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+}
+
+input:focus,
+input:hover {
+  background-color: #fff;
 }
 
 .submit-btn {
@@ -60,6 +96,9 @@ body {
   color: #fff;
   cursor: pointer;
   transition: all ease-in 0.12s;
+  width: 50%;
+  max-width: 180px;
+  align-self: center;
 }
 
 .submit-btn:focus,
@@ -74,7 +113,17 @@ body {
   flex-direction: column;
 }
 
-.name-error {
+.name-error,
+.date-error {
   font-size: 0.8rem;
   color: red;
+}
+
+.req-time-container {
+  background-color: rgb(88, 87, 87);
+  padding: 1.5em;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
