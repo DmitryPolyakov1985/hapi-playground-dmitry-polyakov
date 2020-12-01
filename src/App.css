@@ -63,7 +63,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   background-color: #ddd;
   margin: 10px auto;
 }
