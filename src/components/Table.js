@@ -116,7 +116,7 @@ export class Table extends Component {
                     <div className='form-field'>
                         <label htmlFor="date">Date: </label>
                         <div className='date-form-block'>
-                            <input type="text" name='date' id='date' placeholder='Date' value={this.state.date} onChange={e => this.setState({date: e.target.value})} />
+                            <input type="date" name='date' id='date' placeholder='Date' value={this.state.date} onChange={e => this.setState({date: e.target.value})} />
                             {this.state.errors.date && <span className='date-error'>*{this.state.errors.date}</span>}
                         </div>
                     </div>
